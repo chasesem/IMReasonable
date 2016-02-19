@@ -1,0 +1,196 @@
+//
+//  IMReasonable.pch
+//  IMReasonable
+//
+//  Created by apple on 14/10/28.
+//  Copyright (c) 2014年 Reasonable. All rights reserved.
+//
+
+#ifndef IMReasonable_IMReasonable_pch
+#define IMReasonable_IMReasonable_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Tool.h"
+#import "MBProgressHUD.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#endif
+
+#define INVITE_MANY_PEOPLE 0//邀请多人
+#define INVITE_ALL 1//一键邀请
+#define INVITE_SHEET 1//邀请弹出框
+#define INVITE 0//确定群邀
+#define INVITE_ALL_FRIENDS_COMPLETE @"INVITE_ALL_FRIENDS_COMPLETE"
+
+#define iOS(version) (([[[UIDevice currentDevice] systemVersion] intValue] >= version)? 1 : 0 )
+
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define PJLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define PJLog(...)
+#endif
+
+//是否允许横屏
+#define ALLOW_LANDSCAPE @"ALLOW_LANDSCAPE"
+//是否开启动画
+#define OPEN_ANIMATION @"OPEN_ANIMATION"
+
+//重新加载缓存
+#define RELOAD_CACHE @"RELOAD_CACHE"
+//重新加载聊天列表数据
+#define RELOAD_CHETLIST @"RELOAD_CHETLIST"
+
+
+// 颜色
+#define PJColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define PJRandomColor PJColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define CH @"86"
+#define HK @"852"
+
+#define MESSAGE_TYPE_IMG 1
+#define MESSAGE_TYPE_TEXT 0
+
+#define IMG @"img"
+#define VOICE @"voice"
+#define GROUP_VOICE @"voice|2"
+#define EMAIL @"email"
+#define GROUP_VOICE2 @"voice|2.0"
+
+#define JID [[NSUserDefaults standardUserDefaults] stringForKey:XMPPREASONABLEJID]
+
+#define  MJID [[[[NSUserDefaults standardUserDefaults] stringForKey:XMPPREASONABLEJID] componentsSeparatedByString:@"@"] objectAtIndex:0]
+
+#define PATHS NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)
+#define DOCUMENTDIRECTORY [PATHS objectAtIndex:0]
+#define FULLPATHTOFILE(fileName) [DOCUMENTDIRECTORY stringByAppendingPathComponent:fileName]
+
+#define  ISSIGN_OUT          @"ISSIGN_OUT"//是否退出登录
+#define  XMPPREASONABLEJID   @"xmppreasonablejid"
+#define  XMPPREASONABLEFULLJID   @"xmppreasonablefulljid"
+#define  XMPPREASONABLEPWD   @"xmppreasonablepwd"
+#define  XMPPMYFACE          @"myface"
+#define  XMPPSERVER          @"talk-king.net"
+#define  XMPPSERVER2          @"@talk-king.net"
+#define  XMPPUSERCOUNTRYCODE          @"xmppusercountrycode"
+#define  USERELISTNEED      @"userlistneed"
+#define  MyLOCALNICKNAME    @"MYLOCALNAME"
+#define  MyEmail    @"MYEMAIL"
+
+#define  CHATWALLPAPER    @"CHATWALLPAPER"
+#define  SPREADMAILACCOUNTTYPE    @"9999"
+
+
+
+#define  XMPPHOST            @"host"
+#define  REGISTRATIONACCOUNT @"anyconnect"
+#define  HOSTVAULE           @"5338"   //5222
+
+//#define  IMMESSAGE           @"IMMESSAGE"
+
+//发送邮件的账号(发送邀请邮件，该账号的发送量有限，没有发送量了要去找啊沃添加发送量)
+#define LOGINEMAIL @"TalkKing@reasonables.com"
+#define PASSWORD @"talkking12#"
+#define FROM @"TalkKing@reasonables.com"
+#define FROMNAME @"思齐Spread"
+//存放所有talkking用户的spread账号
+#define RESPREAD_EMAIL @"TalkKing@reasonables.com"
+#define RESPREAD_PASSWORD @"talkking12#"
+//联系人列表
+#define CONTACTS @"talkkingusers"
+//是否填写了邮箱
+#define HAS_FILL_OUT_EMAIL @"has_fill_out_email"
+//用户填写的spread邮箱
+#define USER_SPREAD_EMAIL @"user_spread_email"
+//是否开启邮箱填写提示
+#define ENABLE_FILL_OUT_EMAIL_PROMPT @"enable_fill_out_email_prompt"
+//最后一次提示填写邮箱的日期(yyyy-hh-dd)
+#define LAST_DATE_OF_EMAIL_PROMPT @"last_date_of_email_prompt"
+//提示填写邮箱时间间隔(天为单位)
+#define INTERVAL_OF_EMAIL_PROMPT 3
+
+//soap调用xml参数(调用方法addSubscriberByInfo)
+#define ADD_EMAIL_PARAM @"<?xml version=\"1.0\" encoding=\"utf-8\"?><soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\"><soap12:Body><addSubscriberByInfo xmlns=\"http://service.reasonablespread.com/\"><loginEmail>%@</loginEmail><password>%@</password><subscriberArgs><email>%@</email><firstName></firstName><middleName></middleName><lastName></lastName><jobTitle></jobTitle><company></company><homePhone>%@</homePhone><address1></address1><address2></address2><address3></address3><city></city><state></state><country></country><postalCode></postalCode><subPostalCode></subPostalCode><fax></fax><webUrl></webUrl><title></title><gender></gender><date1>%@</date1><date2>%@</date2><customField1></customField1><customField2></customField2><customField3></customField3><customField4></customField4><customField5></customField5><customField6></customField6><customField7></customField7><customField8></customField8><customField9></customField9><customField10></customField10><customField11></customField11><customField12></customField12><customField13></customField13><customField14></customField14><customField15></customField15></subscriberArgs><subscription>%@</subscription><optInType>Off</optInType></addSubscriberByInfo></soap12:Body></soap12:Envelope>"
+
+#define IMAGE_WIDTH 160
+#define IMAGE_HEIGHT 160
+#define MARGEN 10
+
+//导航栏高度
+#define NAVIGATION_HEIGHT self.navigationController.navigationBar.frame.size.height
+//状态栏高度
+#define STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+
+//发送邮件地址
+#define SEND_EMAIL_INVITATION_URL @"http://service.rspread.com/service.asmx/Send"
+//发送邮箱邀请的参数格式
+#define SEND_EMAIL_INVITATION_PARAM @"LoginEmail=%@&Password=%@&From=%@&FromName=%@&To=%@&Subject=%@&Body=%@"
+#define WSDL_URL @"http://service.rspread.com/service.asmx"
+
+//http://servicetig.talk-king.net/AllUserFile/jid(用户的jid)/SmallImage/图片 聊天记录中小图的地址
+//http://servicetig.talk-king.net/AllUserFile/jid(用户的jid)/Image/图片 聊天记录中原图的地址
+
+#define IMReasonableAPP     @"http://servicetig.talk-king.net/IMReasonable.svc/"  //http://service.talk-king.net/IMReasonable.svc/
+#define IMReasonableAPPImagePath     @"http://servicetig.talk-king.net/"
+
+
+#define IMReasonableAPPKey      @"24F2D104-703F-46A0-92DE-383C6C7FBC50"
+#define IMReasonableDESKey      @"Qlo5y9Em"
+
+
+//客服邮箱
+#define IMMailName              @"apple@reasonables.com"
+
+//屏幕大小
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENWIHEIGHT [UIScreen mainScreen].bounds.size.height
+#define ratioW (SCREENWIDTH/320)
+#define ratioH (SCREENWIHEIGHT/ 480)
+
+#define LOADING @"loading"
+
+//判断当前系统版本是否大于version
+#define iOS(version) (([[[UIDevice currentDevice] systemVersion] intValue] >= version)? 1 : 0 )
+
+// 2.判断是否为iOS7以上
+#define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+//判断是否为iOS7以下
+#define IOS8_OR_LATER   ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0)
+
+//
+//#ifndef __OPTIMIZE__
+//#define NSLog(...) {}
+//#else
+//#define NSLog(...) {}
+//#endif
+//
+//#endif
+
+
+//短信格式
+#define InvitationSms86  @"%@ 您好，您的朋友%@（电话号码是:%@）邀请您使用「齐聊」方便你们联系彼此:http://talk-king.net/d  "
+#define InvitationSms852  @"%@ 您好，您的朋友%@（電話號碼是:%@）邀請您使用「乜都傾」將方便你們聯繫彼此 :http://talk-king.net/d  "
+#define InvitationSms   @"%@ Hello, Your friend %@ (phone number is: %@) invites you to use TalkKing, TalkKing will facilitate you to contact each other:http://talk-king.net/d  "
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#endif

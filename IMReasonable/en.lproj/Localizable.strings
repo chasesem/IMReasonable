@@ -1,0 +1,532 @@
+/* 
+  Localizable.strings
+  IMReasonable
+
+  Created by apple on 14/11/20.
+  Copyright (c) 2014年 Reasonable. All rights reserved.
+*/
+
+"OPEN_ANIMATION"="Open animation";
+"COUNTING"="Counting...";
+"VOICE_HAS_DELETED"="Voice has deleted";
+"ALLOW_LANDSCAPE"="Allow landscape";
+"SETTING"="Setting";
+"ORIGINAL"="Original";
+"SEND"="Send";
+"DELETE"="delete";
+"DELETE_THIS_PHOTO"="Delete this picture?";
+"SAVE_FAILED"="Save failed";
+"SAVE_SUCCESS"="Save success";
+"FAILED_TO_LOAD"="Failed to load";
+"LOAD_COMPLETION"="Loadded";
+"LOADING"="Loading";
+"SUBMISSION_FAILURE"="Submission failure";
+"RELOAD"="reload";
+"BACK"="back";
+"EMAIL_CANNOT_EMPTY"="Email cannot be empty";
+"LATER"="Later";
+"NO_LONGER_TIPS"="No longer tips";
+"IDEA"="The idea of this moment...";
+"FRIENDS_CIRCLE"="Circle";
+"FOUND"="Found";
+"INVITE_FOR_FREE"="Free invite friends";
+"EMAIL_PROMPT_ERROR"="Email format is not correct";
+"REQUIRED"="Required";
+"EMAIL_PROMPT"="Fill in your email, so your friends can find you!";
+"LOGIN_ERROR"="login error";
+"SPREAD_EMAIL_PROMPT"="Spread Email Alert";
+"GO_AND_INVITE_FRIENDS"="invite your friends!";
+"BACK_CHATLIST"="back chatlist";
+"SAVE_TO_ALBUM" = "successfully saved to the album!";
+"CLEAR_PROMPT"="Voice chat records will be deleted";
+"CLEAR_DATA"="clear data";
+"SEND_SMS_FAILD"="SMS verification for more than 30 minutes or more than 3 times the number of log";
+"SIGN_OUT"="Sign out";
+"INVITE_ALL_PEOPLE"="invite all people";
+"INVITE_MANY_PEOPLE"="invite many people";
+"INVITE_FRIENDS"="invite friends";
+"START_INVITE"="start invite";
+"UNKNOW"="unknow";
+"CHECK_NET_WORK"="Network is not available";
+"NONETWORK"="No Network";
+"InvitationBody"="Hello, Your friend (phone number is: %@) invites you to use TalkKing, TalkKing will facilitate you to contact each other:http://talk-king.net/d  ";
+"demo" = "this is a demo";
+
+//通讯录
+"INVITE_ALL_FRIENDS_COMPLETE"="Invite all friends complete";
+"lbinvitation"="Invite";
+"lbissureinvitation"="Invite all friends";
+/////////////////////////////////////////////////////////////////////////////////
+//ALl
+"msgInternet"="Network is not connected";
+"msgRef"="The drop-down refresh";
+"msgRefing"="Refreshing......";
+"lbNotio"="From: %@\n%@";
+"lbTconnect"="Connecting....";
+
+"lbttitle"="Tips";
+"lbtok"="OK";
+
+"lbAcopy"="Copy";
+"lbAdelete"="Delete";
+"lbAForward"="Forward";
+"lbAalbum"="Save to album";
+
+"lblookforfriend"="Seeking a Friend...";
+
+
+"lbrspreadmail"="RSpreadMail Notification";
+
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Login page
+
+"lbUsername"="username";
+"lbPassword"="password";
+"btnLogin"="Log In";
+"btnReg"="Sign Up";
+"msgLogining"="Logining......";
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Registration page
+
+"lbPhone"="Phone";
+"btnDone"="Done";
+"msgRegining"="In the register......";
+"msgCanNotConnect"="Not connected to the server, please try again";
+"msgPhoneAndPasswordCanNotNil"="Phone number and password cannot be empty";
+"msgRegFailed"="Registration failed, please try again";
+
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// ChatListViewController
+"navRightItem"="Contact";
+"msgUserGroupOnline"="Online";
+"msgUserGroupBusy"="Busy";
+"msgUserGroupOffline"="Offline";
+"navTitle"="Message";
+"msgNoCam"="The camera is not available";
+
+"lbclvuser"="Identity Information";
+"lbclvok"="OK";
+
+"lbclvdelete"="Moved out";
+
+
+
+"lbclvNoMan"="Your friends may also be using TalkKing, a free invitation!";
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//Keybordview
+"lbphoto"="Photo";
+"lbshoot"="Shoot";
+"lblocation"="site";
+
+/////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+///MainViewController
+"lbfavorites"="Favorites";
+"lbcontacts"="Contacts";
+"lbchats"="TalkKing";
+"lbsetter"="Me";
+///////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+///ChatViewController
+"lbimgfaied"="Failed to send";
+"lbearlier"="Earlier";
+"lbyesterday"="Yesterday";
+"lbtoday"="Today";
+
+"lbonline"="Online";
+"lbtodyonline"="last seen today at %@";
+"lbyesterdayonline"="last seen yesterday at %@";
+"lbtalkwith"="With %@ - TalkKing";
+
+"lbctvnotconnect"="Not connected to the server";
+
+
+"lbcvcGroupchat"="You are not the member of this group , so you cannot talk in the group.";
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+///FirstViewController
+"lbmsgTip"="Make sure you enter the international code and mobile phone number";
+"lbFphone"="Your telephone number";
+"lbFsendsms"="Sending verification code ....";
+//action
+"lbactionmsg"="\n +%@   %@\n\n Please confirm your above phone number is correct";
+"lbactionTitle"="Telephone number to confirm:";
+"lbactionRight"="Editor";
+"lbactionLeft"="Yes";
+"lbsmsFailed"="Failed to send verification code";
+"lbphonenumbererr"="Please enter the correct telephone number";
+////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////
+//SendViewController
+"lbSchecksms"="Being examined code ....";
+"lbsmserr"="Verification code error";
+"lbsmstimelong"="Verification code Time out";
+"lbNOinternet"="Please check your network connection";
+"lbLoginFaied"="Login failed";
+"lbSendsmsSucc"="Verification code retransmission success";
+"lbtimes"="Three minutes more than the number of transmissions";
+
+//控件标题
+"lbSTitle1"="We have a verification code SMS to the phone number listed above.";
+"lbSTitle2"="Please enter the 6 code to complete your phone number verification";
+"lbRectsms"="Send again";
+"lbCallme"="Contact us";
+"lbRectsmsWait"="%d Seconds";
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+//ThirdViewControl
+"lbTTile"="User Profile";
+"lbTStile"="Saved successfully";
+"lbmsgTitle"="Set user image and user name";
+
+"lbTusername"="The user name cannot be empty";
+
+"lbTunknowerror"="Unknown error";
+
+"lbTPhonto"="Album";
+"lbTShoot"="Camera";
+"lbTCancle"="Cancel";
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////
+////CountryCodeViewController
+"lbccvcountry"="Your country";
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//SelectUserViewController
+"lbSUTitle"="Select Contact";
+
+"lbsuvaddtitle"="Add to group";
+"lbsuvadd"="Add";
+"lbsuvcancel"="Cancel";
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//FavoritesViewController
+"lbfaCreatgroup"="Create Group";
+"lbfaCreatbroadcast"="Broadcast List";
+
+"lbfasendinginvite"="Sending invitation";
+"lbfasendsucinvite"="Invitation sent successfully";
+"lbfasendfaildinvite"="Failed to send invitation";
+
+"lbfsms"="SMS";
+
+"lbfsearch"="Search";
+////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+//ChatUserTableViewCell
+"lbcutinvite"="Invite";
+////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//NewGroupViewController
+"lbngvnext"="Next";
+
+"lbngvaddphoto"="Add Photo";
+"lbngvmsgtitle"="Set group theme and select the group icon";
+"lbngvsubtitle"="Groups Themes";
+"lbngvmsgsettitle"="Please set up group theme";
+
+"lbngvdeleteimage"="Clear Icon";
+
+////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+//GroupAddUserUIViewController
+"lbgauaddme"="Add members";
+"lbgaucreat"="Create";
+
+"lbgauadd"="Add";
+
+"lbgaucreating"="Creating.....";
+"lbgauyou"="You,";
+"lbgaucreatfaild"="Failed to create";
+////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+////GroupSetViewController
+"lbgsvedit"="Edit";
+"lbgsvyou"="You";
+"lbgsvadmin"="Admin";
+"lbgsvquit"="Quit Group";
+"lbgsvadd"="Add group member";
+
+"lbgsvmoveout"="Remove %@";
+"lbgsvcall"="Call %@";
+"lbgsvmessage"="Message %@";
+
+"lbgsvmovesuc"="Removed Success";
+"lbgsvmovefai"="Removed Failure";
+
+"lbgsvdestroy"="Destroy Group";
+"lbgsvcancel"="Cancel";
+/////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+/////设置页面
+"lbsabout"="About";
+"lbsprofile"="Profile";
+"lbwallpaper"="Talkking Wallpaper";
+"lbsnetstate"="Network Status";
+"lbsusage"="Usage";
+"lbsnetstateconnect"="Connected";
+"lbsnetstatedisconnect"="Not Connected";
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+/**时间相关的翻译*/
+"lbtimetoday"="Today";
+"lbtimeyestoday"="Yesterday";
+"lbtimeSunday"="Sunday";
+"lbtimeMonday"="Monday";
+"lbtimeTuesday"="Tuesday";
+"lbtimeWednesday"="Wednesday";
+"lbtimeThursday"="Thursday";
+"lbtimeFriday"="Friday";
+"lbtimeSaturday"="Saturday";
+
+//*图片浏览组建的防御文件//
+"lbImgShowViewB"="Images";
+
+//*SpreadMailViewController//
+"lbtspreadname"="Spread Email";
+
+
+
+
+
+//国家代码正常翻译显示
+"lbc_Angola"="Angola";
+"lbc_Afghanistan"="Afghanistan";
+"lbc_Albania"="Albania";
+"lbc_Algeria"="Algeria";
+"lbc_Andorra"="Andorra";
+"lbc_Anguilla"="Anguilla";
+"lbc_Antigua and Barbuda"="Antigua and Barbuda";
+"lbc_Argentina"="Argentina";
+"lbc_Armenia"="Armenia";
+"lbc_Ascension"="Ascension";
+"lbc_Australia"="Australia";
+"lbc_Austria"="Austria";
+"lbc_Azerbaijan"="Azerbaijan";
+"lbc_Bahamas"="Bahamas";
+"lbc_Bahrain"="Bahrain";
+"lbc_Bangladesh"="Bangladesh";
+"lbc_Barbados"="Barbados";
+"lbc_Belarus"="Belarus";
+"lbc_Belgium"="Belgium";
+"lbc_Belize"="Belize";
+"lbc_Benin"="Benin";
+"lbc_BermudaIs."="BermudaIs.";
+"lbc_Bolivia"="Bolivia";
+"lbc_Botswana"="Botswana";
+"lbc_Brazil"="Brazil";
+"lbc_Brunei"="Brunei";
+"lbc_Bulgaria"="Bulgaria";
+"lbc_Burkina-faso"="Burkina-faso";
+"lbc_Burma"="Burma";
+"lbc_Burundi"="Burundi";
+"lbc_Cameroon"="Cameroon";
+"lbc_Canada"="Canada";
+"lbc_Cayman Is."="Cayman Is.";
+"lbc_Central African Republic"="Central African Republic";
+"lbc_Chad"="Chad";
+"lbc_Chile"="Chile";
+"lbc_China"="China";
+"lbc_Colombia"="Colombia";
+"lbc_Congo"="Congo";
+"lbc_Cook Is."="Cook Is.";
+"lbc_Costa Rica"="Costa Rica";
+"lbc_Cuba"="Cuba";
+"lbc_Cyprus"="Cyprus";
+"lbc_Czech Republic"="Czech Republic";
+"lbc_Denmark"="Denmark";
+"lbc_Djibouti"="Djibouti";
+"lbc_Dominica Rep."="Dominica Rep.";
+"lbc_Ecuador"="Ecuador";
+"lbc_Egypt"="Egypt";
+"lbc_EISalvador"="EISalvador";
+"lbc_Estonia"="Estonia";
+"lbc_Ethiopia"="Ethiopia";
+"lbc_Fiji"="Fiji";
+"lbc_Finland"="Finland";
+"lbc_France"="France";
+"lbc_French Guiana"="French Guiana";
+"lbc_Gabon"="Gabon";
+"lbc_Gambia"="Gambia";
+"lbc_Georgia"="Georgia";
+"lbc_Germany"="Germany";
+"lbc_Ghana"="Ghana";
+"lbc_Gibraltar"="Gibraltar";
+"lbc_Greece"="Greece";
+"lbc_Grenada"="Grenada";
+"lbc_Guam"="Guam";
+"lbc_Guatemala"="Guatemala";
+"lbc_Guinea"="Guinea";
+"lbc_Guyana"="Guyana";
+"lbc_Haiti"="Haiti";
+"lbc_Honduras"="Honduras";
+"lbc_Hongkong"="Hongkong";
+"lbc_Hungary"="Hungary";
+"lbc_Iceland"="Iceland";
+"lbc_India"="India";
+"lbc_Indonesia"="Indonesia";
+"lbc_Iran"="Iran";
+"lbc_Iraq"="Iraq";
+"lbc_Ireland"="Ireland";
+"lbc_Israel"="Israel";
+"lbc_Italy"="Italy";
+"lbc_IvoryCoast"="IvoryCoast";
+"lbc_Jamaica"="Jamaica";
+"lbc_Japan"="Japan";
+"lbc_Jordan"="Jordan";
+"lbc_Kampuchea (Cambodia )"="Kampuchea (Cambodia )";
+"lbc_Kazakstan"="Kazakstan";
+"lbc_Kenya"="Kenya";
+"lbc_Korea"="Korea";
+"lbc_Kuwait"="Kuwait";
+"lbc_Kyrgyzstan"="Kyrgyzstan";
+"lbc_Laos"="Laos";
+"lbc_Latvia"="Latvia";
+"lbc_Lebanon"="Lebanon";
+"lbc_Lesotho"="Lesotho";
+"lbc_Liberia"="Liberia";
+"lbc_Libya"="Libya";
+"lbc_Liechtenstein"="Liechtenstein";
+"lbc_Lithuania"="Lithuania";
+"lbc_Luxembourg"="Luxembourg";
+"lbc_Macao"="Macao";
+"lbc_Madagascar"="Madagascar";
+"lbc_Malawi"="Malawi";
+"lbc_Malaysia"="Malaysia";
+"lbc_Maldives"="Maldives";
+"lbc_Mali"="Mali";
+"lbc_Malta"="Malta";
+"lbc_Mariana Is"="Mariana Is";
+"lbc_Martinique"="Martinique";
+"lbc_Mauritius"="Mauritius";
+"lbc_Mexico"="Mexico";
+"lbc_Moldova, Republic of"="Moldova, Republic of";
+"lbc_Monaco"="Monaco";
+"lbc_Mongolia"="Mongolia";
+"lbc_Montserrat Is"="Montserrat Is";
+"lbc_Morocco"="Morocco";
+"lbc_Mozambique"="Mozambique";
+"lbc_Namibia"="Namibia";
+"lbc_Nauru"="Nauru";
+"lbc_Nepal"="Nepal";
+"lbc_Netheriands Antilles"="Netheriands Antilles";
+"lbc_Netherlands"="Netherlands";
+"lbc_NewZealand"="NewZealand";
+"lbc_Nicaragua"="Nicaragua";
+"lbc_Niger"="Niger";
+"lbc_Nigeria"="Nigeria";
+"lbc_North Korea"="North Korea";
+"lbc_Norway"="Norway";
+"lbc_Oman"="Oman";
+"lbc_Pakistan"="Pakistan";
+"lbc_Panama"="Panama";
+"lbc_Papua New Cuinea"="Papua New Cuinea";
+"lbc_Paraguay"="Paraguay";
+"lbc_Peru"="Peru";
+"lbc_Philippines"="Philippines";
+"lbc_Poland"="Poland";
+"lbc_French Polynesia"="French Polynesia";
+"lbc_Portugal"="Portugal";
+"lbc_PuertoRico"="PuertoRico";
+"lbc_Qatar"="Qatar";
+"lbc_Reunion"="Reunion";
+"lbc_Romania"="Romania";
+"lbc_Russia"="Russia";
+"lbc_Saint Lueia"="Saint Lueia";
+"lbc_Saint Vincent"="Saint Vincent";
+"lbc_Samoa Eastern"="Samoa Eastern";
+"lbc_Samoa Western"="Samoa Western";
+"lbc_San Marino"="San Marino";
+"lbc_Sao Tome and Principe"="Sao Tome and Principe";
+"lbc_Saudi Arabia"="Saudi Arabia";
+"lbc_Senegal"="Senegal";
+"lbc_Seychelles"="Seychelles";
+"lbc_Sierra Leone"="Sierra Leone";
+"lbc_Singapore"="Singapore";
+"lbc_Slovakia"="Slovakia";
+"lbc_Slovenia"="Slovenia";
+"lbc_Solomon Is"="Solomon Is";
+"lbc_Somali"="Somali";
+"lbc_South Africa"="South Africa";
+"lbc_Spain"="Spain";
+"lbc_Sri Lanka"="Sri Lanka";
+"lbc_St.Lucia"="St.Lucia";
+"lbc_St.Vincent"="St.Vincent";
+"lbc_Sudan"="Sudan";
+"lbc_Suriname"="Suriname";
+"lbc_Swaziland"="Swaziland";
+"lbc_Sweden"="Sweden";
+"lbc_Switzerland"="Switzerland";
+"lbc_Syria"="Syria";
+"lbc_Taiwan"="Taiwan";
+"lbc_Tajikstan"="Tajikstan";
+"lbc_Tanzania"="Tanzania";
+"lbc_Thailand"="Thailand";
+"lbc_Togo"="Togo";
+"lbc_Tonga"="Tonga";
+"lbc_Trinidad and Tobago"="Trinidad and Tobago";
+"lbc_Tunisia"="Tunisia";
+"lbc_Turkey"="Turkey";
+"lbc_Turkmenistan"="Turkmenistan";
+"lbc_Uganda"="Uganda";
+"lbc_Ukraine"="Ukraine";
+"lbc_United Arab Emirates"="United Arab Emirates";
+"lbc_United Kiongdom"="United Kiongdom";
+"lbc_United States of America"="United States of America";
+"lbc_Uruguay"="Uruguay";
+"lbc_Uzbekistan"="Uzbekistan";
+"lbc_Venezuela"="Venezuela";
+"lbc_Vietnam"="Vietnam";
+"lbc_Yemen"="Yemen";
+"lbc_Yugoslavia"="Yugoslavia";
+"lbc_Zimbabwe"="Zimbabwe";
+"lbc_Zaire"="Zaire";
+"lbc_Zambia"="Zambia";
+

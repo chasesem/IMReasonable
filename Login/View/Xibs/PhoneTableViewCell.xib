@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PhoneTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9po-6l-C3X">
+                        <rect key="frame" x="8" y="7" width="72" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PW-Ng-aFW">
+                        <rect key="frame" x="108" y="7" width="204" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LD-VN-ziz">
+                        <rect key="frame" x="93" y="7" width="2" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="MoN-MS-jh8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5PW-Ng-aFW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="DEq-b8-41Y"/>
+                    <constraint firstItem="4LD-VN-ziz" firstAttribute="leading" secondItem="9po-6l-C3X" secondAttribute="trailing" constant="13" id="DWg-nq-Uda"/>
+                    <constraint firstItem="9po-6l-C3X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KxZ-RJ-sbJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9po-6l-C3X" secondAttribute="bottom" constant="-2" id="OP7-Fq-Ak1"/>
+                    <constraint firstItem="4LD-VN-ziz" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="R0P-UB-e3P"/>
+                    <constraint firstItem="5PW-Ng-aFW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="c1L-cB-a1m"/>
+                    <constraint firstItem="4LD-VN-ziz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="cgg-WL-8VG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5PW-Ng-aFW" secondAttribute="bottom" constant="-2" id="euZ-Ky-iRa"/>
+                    <constraint firstItem="5PW-Ng-aFW" firstAttribute="leading" secondItem="4LD-VN-ziz" secondAttribute="trailing" constant="13" id="ly4-X2-QE0"/>
+                    <constraint firstItem="9po-6l-C3X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="w2j-Zj-a5C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="code" destination="9po-6l-C3X" id="TCT-kg-PaZ"/>
+                <outlet property="phonenumber" destination="5PW-Ng-aFW" id="akC-cV-x4q"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="272"/>
+        </tableViewCell>
+    </objects>
+</document>

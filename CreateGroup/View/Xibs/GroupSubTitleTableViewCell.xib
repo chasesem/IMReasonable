@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GroupSubTitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="群组主题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-Cn-JIi">
+                        <rect key="frame" x="8" y="9" width="264" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-os-lTT">
+                        <rect key="frame" x="280" y="13" width="32" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="2kE-pm-Jai"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q9B-os-lTT" firstAttribute="leading" secondItem="Msr-Cn-JIi" secondAttribute="trailing" constant="8" id="Tef-4o-Kdi"/>
+                    <constraint firstItem="Q9B-os-lTT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="bzM-9s-Lam"/>
+                    <constraint firstItem="Msr-Cn-JIi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="g8p-lS-WDt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chanumber" destination="Q9B-os-lTT" id="Lx4-yA-Gaq"/>
+                <outlet property="subtitle" destination="Msr-Cn-JIi" id="vwx-Qh-zjb"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="221"/>
+        </tableViewCell>
+    </objects>
+</document>
