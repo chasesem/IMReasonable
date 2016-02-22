@@ -986,7 +986,12 @@
     if ([message.from isEqualToString:self.from.jidstr]) {
         self.suspendAnimation=true;
         [self initData:YES];
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [IMReasonableDao updateUpdate:self.from.jidstr];
+            
+        });
     }
+    
 }
 - (void)userStatusChange:(XMPPPresence*)presence
 {

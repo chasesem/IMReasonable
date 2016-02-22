@@ -79,8 +79,8 @@
 +  (BOOL) deleteOneMessageWithID:(NSString *)msgID;
 +  (BOOL) markDeleteOneMessageWithID:(NSString *)msgID;
 +(void)updateRoomLocalname:(NSString *)jidstr nickname:(NSString *)nick;
-
 +(NSInteger)getRoomUserCount:(NSString *)jidstr;
 +(BOOL)updateNotShow:(NSString*)jidstr;
 +(BOOL)setUserNeedTips:(NSString*)jidstr vaule:(NSString*)vaule;
++(void)updateUpdate:(NSString *)jidstr;
 @end

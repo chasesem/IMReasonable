@@ -1150,5 +1150,10 @@
     flag=[FMDBDao executeUpdate:sql];
     return flag;
 }
-
++(void)updateUpdate:(NSString *)jidstr{
+    BOOL flag;
+    NSString * sql = [NSString stringWithFormat:@"update [User] set [Update] = datetime('now', 'localtime') where jidstr=\"%@\"",jidstr];
+    flag = [FMDBDao executeUpdate:sql];
+    
+}
 @end
