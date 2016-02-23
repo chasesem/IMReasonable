@@ -7,7 +7,6 @@
 //
 
 #import "XMPPFramework.h"
-#import "Reachability.h"
 #import "FMDB.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "MessageModel.h"
@@ -15,8 +14,7 @@
 #import "loginUserData.h"
 #import "XMPPAutoPing.h"
 #import "XMPPDao.h"
-
-
+#import "Reachability.h"
 
 
 

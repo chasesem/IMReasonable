@@ -88,7 +88,9 @@ static NSMutableArray* allRoom;
 
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self teardownStream];
+    
 }
 - (void)teardownStream
 {

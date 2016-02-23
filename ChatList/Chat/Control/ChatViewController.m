@@ -148,7 +148,8 @@
 {
     [super viewWillAppear:animated];
     [self setDelegate];
-//    [tableview reloadData];
+    [self initNav];
+    //[tableview reloadData];
 }
 
 

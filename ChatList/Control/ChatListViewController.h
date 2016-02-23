@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "AppDelegate.h"
-@interface ChatListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,ChatHelerpDelegate,UIActionSheetDelegate,UISearchDisplayDelegate,UISearchBarDelegate,UIAlertViewDelegate,UIActionSheetDelegate>
+#import "Reachability.h"
+
+@interface ChatListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,ChatHelerpDelegate,UIActionSheetDelegate,UISearchDisplayDelegate,UISearchBarDelegate,UIAlertViewDelegate,UIActionSheetDelegate,InternetConnectDelegate>
 {
    
     

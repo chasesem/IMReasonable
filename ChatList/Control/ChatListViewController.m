@@ -28,6 +28,8 @@
 #import "SCLAlertView.H"
 #import "MJPhoto.h"
 #import "MJPhotoBrowser.h"
+#import "Reachability.h"
+
 
 @interface ChatListViewController () {
     UITableView* tableview;
@@ -61,7 +63,7 @@
 //提示语
 @property (nonatomic, strong) UILabel* backImageView;
 @property (nonatomic, strong) NSMutableArray* chatuserlist;
-
+@property (nonatomic, strong)Reachability* reachability;
 @end
 
 @implementation ChatListViewController
@@ -364,9 +366,9 @@
 #pragma mark -创建导航栏上得按钮
 - (void)initNavbutton
 {
-
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetWorkState:) name:kReachabilityChangedNotification object:nil];
     self.navigationItem.title = NSLocalizedString(@"lbchats", nil);
-    ;
+    
     NSString* imagename = [[NSUserDefaults standardUserDefaults] objectForKey:XMPPMYFACE];
     UIView* btnview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 32, 32)];
     UIImage* tempimg = [UIImage imageWithContentsOfFile:[Tool getFilePathFromDoc:imagename]];
@@ -434,6 +436,7 @@
 
     [self.view addSubview:tableview];
     [self initPrompt];
+    
 }
 
 - (void)initPrompt
@@ -822,4 +825,23 @@
     }
 }
 
+//检查网络状态
+-(void)checkNetWorkState:(NSNotification*)note
+{
+    Reachability* currReach = [note object];
+    NSParameterAssert([currReach isKindOfClass:[Reachability class]]);
+    NetworkStatus status = [currReach currentReachabilityStatus];
+    if (status == NotReachable) {
+        self.navigationItem.title = NSLocalizedString(@"lbctvnotconnect", nil);
+    }
+    
+    if (status == kReachableViaWiFi || status == kReachableViaWWAN) {
+        self.navigationItem.title = NSLocalizedString(@"lbchats", nil);
+    }
+    
+    [[NSNotificationCenter defaultCenter]
+     //网络状态发生变化
+     postNotificationName:@"NETCHANGE"
+     object:self];
+}
 @end
