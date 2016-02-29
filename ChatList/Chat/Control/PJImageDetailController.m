@@ -28,7 +28,7 @@
 //图片浏览器返回的信息
 @property(nonatomic,strong)NSDictionary *info;
 @property(nonatomic,weak)UIView *footer;
-
+@property(nonatomic,assign)float imageSize;
 @end
 
 @implementation PJImageDetailController
@@ -61,12 +61,20 @@
     footer.alpha=0.8;
     self.original=[[UISwitch alloc] init];
     int original_h=footer_h/2;
-    [footer addSubview:self.original];
-    self.original.frame=CGRectMake(2*MARGEN, (footer_h-original_h)/2, SCREENWIDTH/7, original_h);
-    self.imageSizeLabel=[[UILabel alloc] init];
-    [footer addSubview:self.imageSizeLabel];
-    self.imageSizeLabel.frame=CGRectMake(CGRectGetMaxX(self.original.frame)+MARGEN, self.original.frame.origin.y, 165, original_h);
     [self SizeOfImage:self.info];
+    self.imageSizeLabel=[[UILabel alloc] init];
+    //添加
+//    if(self.imageSize > 300){
+        [footer addSubview:self.original];
+        [footer addSubview:self.imageSizeLabel];
+//    }
+   
+    self.original.frame=CGRectMake(2*MARGEN, (footer_h-original_h)/2, SCREENWIDTH/7, original_h);
+    
+    
+    self.imageSizeLabel.frame=CGRectMake(CGRectGetMaxX(self.original.frame)+MARGEN, self.original.frame.origin.y, 165, original_h);
+    //[self SizeOfImage:self.info];
+    //NSLog(@"%f------------",[self SizeOfImage:self.info]);
     self.imageSizeLabel.textColor=[UIColor whiteColor];
     UIButton *sendImage=[[UIButton alloc] init];
     [footer addSubview:sendImage];
@@ -89,6 +97,14 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.allowRotation = NO;
     
+}
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    if(![self checkImageSize:self.imageSizeLabel.text]){
+        [self.original removeFromSuperview];
+        [self.imageSizeLabel removeFromSuperview];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -126,6 +142,7 @@
          ALAssetRepresentation *representation = [asset defaultRepresentation];
          fileMB = (float)([representation size]/1024);
          [tmpSelf upDateImageSizeLabel:fileMB];
+         
      }
               failureBlock:^(NSError *error)
      {
@@ -140,10 +157,30 @@
         str=[NSString stringWithFormat:@"%@(%0.2fMB)",NSLocalizedString(@"ORIGINAL", nil),imageSize/1024];
     }else{
         
-        str=[NSString stringWithFormat:@"%@(%0.1fK)",NSLocalizedString(@"ORIGINAL", nil),imageSize];
+        str=[NSString stringWithFormat:@"%@(%0.1fKB)",NSLocalizedString(@"ORIGINAL", nil),imageSize];
     }
     self.imageSizeLabel.text=str;
 }
+
+
+-(BOOL)checkImageSize:(NSString*)imageDataSize{
+    NSArray *first = [imageDataSize componentsSeparatedByString:@"("];
+    NSString *second = first[1];
+    NSString *third = [second substringWithRange:NSMakeRange([second length] - 3,1)];
+    if([third isEqual: @"K"]){
+        float size = [[second substringToIndex:[second length]- 4] floatValue];
+        if(size < 300){
+            return NO;
+        }
+        else{
+            return YES;
+        }
+        //NSLog(@"%f--------",size);
+    }
+    
+    return YES;
+}
+
 
 -(void)hideBar:(BOOL)hide{
     [UIView animateWithDuration:1.0 animations:^{

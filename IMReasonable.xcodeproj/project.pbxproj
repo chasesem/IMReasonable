@@ -30,6 +30,10 @@
 		182AB29E1A36E04100A96AA0 /* msg.caf in Resources */ = {isa = PBXBuildFile; fileRef = 182AB29D1A36E04100A96AA0 /* msg.caf */; };
 		18414ED11A2483D600994AEA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18414ED01A2483D600994AEA /* libsqlite3.dylib */; };
 		18B908A61A81FFB000E6B02D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B908A51A81FFAF00E6B02D /* MessageUI.framework */; };
+		18BA7E611C844FCB009C1A66 /* GoogleConversionPing. in Resources */ = {isa = PBXBuildFile; fileRef = 18BA7E5B1C844FCB009C1A66 /* GoogleConversionPing. */; };
+		18BA7E621C844FCB009C1A66 /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA7E5F1C844FCB009C1A66 /* libGoogleConversionTracking.a */; };
+		18BA7E631C844FCB009C1A66 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18BA7E601C844FCB009C1A66 /* README.txt */; };
+		18BA7E651C844FF0009C1A66 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA7E641C844FF0009C1A66 /* AdSupport.framework */; };
 		18CE61C31A677B1900E45D36 /* CountryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18CE61C21A677B1900E45D36 /* CountryList.plist */; };
 		CA10F0401C19599800D65086 /* PJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA10F03F1C19599800D65086 /* PJButton.m */; };
 		CA11E91E1C43B78800937095 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11E91D1C43B78800937095 /* SettingViewController.m */; };
@@ -634,6 +638,84 @@
 		182AB29D1A36E04100A96AA0 /* msg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msg.caf; sourceTree = "<group>"; };
 		18414ED01A2483D600994AEA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		18B908A51A81FFAF00E6B02D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		18BA7DC91C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DCB1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DCD1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DCF1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DD11C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DD31C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DD51C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DD71C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DD91C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DDB1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DDD1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DDF1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DE11C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DE31C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DE51C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DE71C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DE91C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DEB1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DED1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DEF1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DF11C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DF31C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DF51C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DF71C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DF91C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7DFB1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7DFD1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7DFF1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E011C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E031C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E051C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E071C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E091C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E0B1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E0D1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E0F1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E111C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E131C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E151C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E171C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E191C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E1B1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E1D1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E1F1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E211C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E231C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E251C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E271C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E291C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E2B1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E2D1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E2F1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E311C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E331C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E351C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E371C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E391C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E3B1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E3D1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E3F1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E411C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E431C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E451C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E471C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E491C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E4B1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E4D1C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E4F1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E511C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E531C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E551C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		18BA7E571C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E591C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		18BA7E5B1C844FCB009C1A66 /* GoogleConversionPing. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleConversionPing.; sourceTree = "<group>"; };
+		18BA7E5D1C844FCB009C1A66 /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		18BA7E5F1C844FCB009C1A66 /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleConversionTracking.a; sourceTree = "<group>"; };
+		18BA7E601C844FCB009C1A66 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		18BA7E641C844FF0009C1A66 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		18C0CE131A2036B600BF8C0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		18C0CE141A2036B600BF8C0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		18C0CE151A2036B600BF8C0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -1558,6 +1640,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BA7E651C844FF0009C1A66 /* AdSupport.framework in Frameworks */,
 				18B908A61A81FFB000E6B02D /* MessageUI.framework in Frameworks */,
 				182AB29A1A36A7D800A96AA0 /* AudioToolbox.framework in Frameworks */,
 				18414ED11A2483D600994AEA /* libsqlite3.dylib in Frameworks */,
@@ -1569,6 +1652,7 @@
 				181122011A1EDF0000762075 /* Foundation.framework in Frameworks */,
 				181121FF1A1EDEE600762075 /* CoreGraphics.framework in Frameworks */,
 				181121FD1A1EDED700762075 /* CoreLocation.framework in Frameworks */,
+				18BA7E621C844FCB009C1A66 /* libGoogleConversionTracking.a in Frameworks */,
 				181121FB1A1EDECB00762075 /* CoreData.framework in Frameworks */,
 				181121F91A1EDEBE00762075 /* SystemConfiguration.framework in Frameworks */,
 				181121F71A1EDEB200762075 /* Security.framework in Frameworks */,
@@ -1591,6 +1675,8 @@
 		18111E861A1E12AD00762075 = {
 			isa = PBXGroup;
 			children = (
+				18BA7E641C844FF0009C1A66 /* AdSupport.framework */,
+				18BA7DC81C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
 				18CF41931ABAABB1006038E1 /* CreateGroup */,
 				181A1D021AE5FD07008023F3 /* GroupSet */,
 				1820F9661B390753007049C1 /* Wallpaper */,
@@ -2971,6 +3057,690 @@
 			);
 			name = SelectUser;
 			path = Control;
+			sourceTree = "<group>";
+		};
+		18BA7DC81C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DC91C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DCA1C844FCB009C1A66 /* Deprecated */,
+				18BA7DCC1C844FCB009C1A66 /* DoubleClick */,
+				18BA7DCE1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+				18BA7E5F1C844FCB009C1A66 /* libGoogleConversionTracking.a */,
+				18BA7E601C844FCB009C1A66 /* README.txt */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DCA1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DCB1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DCC1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DCD1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DCE1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DCF1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DD01C844FCB009C1A66 /* Deprecated */,
+				18BA7DD21C844FCB009C1A66 /* DoubleClick */,
+				18BA7DD41C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DD01C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DD11C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DD21C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DD31C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DD41C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DD51C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DD61C844FCB009C1A66 /* Deprecated */,
+				18BA7DD81C844FCB009C1A66 /* DoubleClick */,
+				18BA7DDA1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DD61C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DD71C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DD81C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DD91C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DDA1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DDB1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DDC1C844FCB009C1A66 /* Deprecated */,
+				18BA7DDE1C844FCB009C1A66 /* DoubleClick */,
+				18BA7DE01C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DDC1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DDD1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DDE1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DDF1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DE01C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DE11C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DE21C844FCB009C1A66 /* Deprecated */,
+				18BA7DE41C844FCB009C1A66 /* DoubleClick */,
+				18BA7DE61C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DE21C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DE31C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DE41C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DE51C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DE61C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DE71C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DE81C844FCB009C1A66 /* Deprecated */,
+				18BA7DEA1C844FCB009C1A66 /* DoubleClick */,
+				18BA7DEC1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DE81C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DE91C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DEA1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DEB1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DEC1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DED1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DEE1C844FCB009C1A66 /* Deprecated */,
+				18BA7DF01C844FCB009C1A66 /* DoubleClick */,
+				18BA7DF21C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DEE1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DEF1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DF01C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DF11C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DF21C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DF31C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DF41C844FCB009C1A66 /* Deprecated */,
+				18BA7DF61C844FCB009C1A66 /* DoubleClick */,
+				18BA7DF81C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DF41C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DF51C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DF61C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DF71C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DF81C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DF91C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7DFA1C844FCB009C1A66 /* Deprecated */,
+				18BA7DFC1C844FCB009C1A66 /* DoubleClick */,
+				18BA7DFE1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7DFA1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DFB1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7DFC1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DFD1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7DFE1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7DFF1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E001C844FCB009C1A66 /* Deprecated */,
+				18BA7E021C844FCB009C1A66 /* DoubleClick */,
+				18BA7E041C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E001C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E011C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E021C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E031C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E041C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E051C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E061C844FCB009C1A66 /* Deprecated */,
+				18BA7E081C844FCB009C1A66 /* DoubleClick */,
+				18BA7E0A1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E061C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E071C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E081C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E091C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E0A1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E0B1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E0C1C844FCB009C1A66 /* Deprecated */,
+				18BA7E0E1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E101C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E0C1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E0D1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E0E1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E0F1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E101C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E111C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E121C844FCB009C1A66 /* Deprecated */,
+				18BA7E141C844FCB009C1A66 /* DoubleClick */,
+				18BA7E161C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E121C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E131C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E141C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E151C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E161C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E171C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E181C844FCB009C1A66 /* Deprecated */,
+				18BA7E1A1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E1C1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E181C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E191C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E1A1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E1B1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E1C1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E1D1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E1E1C844FCB009C1A66 /* Deprecated */,
+				18BA7E201C844FCB009C1A66 /* DoubleClick */,
+				18BA7E221C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E1E1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E1F1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E201C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E211C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E221C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E231C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E241C844FCB009C1A66 /* Deprecated */,
+				18BA7E261C844FCB009C1A66 /* DoubleClick */,
+				18BA7E281C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E241C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E251C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E261C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E271C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E281C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E291C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E2A1C844FCB009C1A66 /* Deprecated */,
+				18BA7E2C1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E2E1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E2A1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E2B1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E2C1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E2D1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E2E1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E2F1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E301C844FCB009C1A66 /* Deprecated */,
+				18BA7E321C844FCB009C1A66 /* DoubleClick */,
+				18BA7E341C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E301C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E311C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E321C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E331C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E341C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E351C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E361C844FCB009C1A66 /* Deprecated */,
+				18BA7E381C844FCB009C1A66 /* DoubleClick */,
+				18BA7E3A1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E361C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E371C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E381C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E391C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E3A1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E3B1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E3C1C844FCB009C1A66 /* Deprecated */,
+				18BA7E3E1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E401C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E3C1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E3D1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E3E1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E3F1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E401C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E411C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E421C844FCB009C1A66 /* Deprecated */,
+				18BA7E441C844FCB009C1A66 /* DoubleClick */,
+				18BA7E461C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E421C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E431C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E441C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E451C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E461C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E471C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E481C844FCB009C1A66 /* Deprecated */,
+				18BA7E4A1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E4C1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E481C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E491C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E4A1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E4B1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E4C1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E4D1C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E4E1C844FCB009C1A66 /* Deprecated */,
+				18BA7E501C844FCB009C1A66 /* DoubleClick */,
+				18BA7E521C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E4E1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E4F1C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E501C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E511C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E521C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E531C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E541C844FCB009C1A66 /* Deprecated */,
+				18BA7E561C844FCB009C1A66 /* DoubleClick */,
+				18BA7E581C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E541C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E551C844FCB009C1A66 /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E561C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E571C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E581C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS-3.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E591C844FCB009C1A66 /* ACTReporter.h */,
+				18BA7E5A1C844FCB009C1A66 /* Deprecated */,
+				18BA7E5C1C844FCB009C1A66 /* DoubleClick */,
+				18BA7E5E1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS- */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.4.0";
+			sourceTree = "<group>";
+		};
+		18BA7E5A1C844FCB009C1A66 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E5B1C844FCB009C1A66 /* GoogleConversionPing. */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		18BA7E5C1C844FCB009C1A66 /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				18BA7E5D1C844FCB009C1A66 /* DCTReporter.h */,
+			);
+			path = DoubleClick;
+			sourceTree = "<group>";
+		};
+		18BA7E5E1C844FCB009C1A66 /* GoogleConversionTrackingSDK-iOS- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GoogleConversionTrackingSDK-iOS-";
 			sourceTree = "<group>";
 		};
 		18CB2EE11A2EB9380005316F /* SDWebImage */ = {
@@ -4457,6 +5227,7 @@
 				CAB993501BB3956F00661AB7 /* ToolViewKeyboard@2x.png in Resources */,
 				CAB0DAB81BB2B5EB00518F0F /* GroupSubTitleTableViewCell.xib in Resources */,
 				CA9A1CEF1C3BD646008B725D /* email_100px.png in Resources */,
+				18BA7E611C844FCB009C1A66 /* GoogleConversionPing. in Resources */,
 				CAB993AD1BB397F600661AB7 /* CheckSingleDark.png in Resources */,
 				CAB993A61BB397F600661AB7 /* Alert7@3x.png in Resources */,
 				CAB997681BB3A35500661AB7 /* Expression_58@2x.png in Resources */,
@@ -4488,6 +5259,7 @@
 				CAB993AC1BB397F600661AB7 /* CheckDoubleDark@3x.png in Resources */,
 				CAB9974B1BB3A35500661AB7 /* Expression_29@2x.png in Resources */,
 				18111EA01A1E12AD00762075 /* Images.xcassets in Resources */,
+				18BA7E631C844FCB009C1A66 /* README.txt in Resources */,
 				CAB993A51BB397F600661AB7 /* Alert7@2x.png in Resources */,
 				CAB9973C1BB3A35500661AB7 /* Expression_14@2x.png in Resources */,
 				CAB997351BB3A35500661AB7 /* Expression_7@2x.png in Resources */,
@@ -5003,6 +5775,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = /usr/lib/libxml2.dylib;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /usr/lib/libxml2.dylib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IMReasonable/IMReasonable.pch";
 				HEADER_SEARCH_PATHS = (
@@ -5020,9 +5793,16 @@
 					"$(PROJECT_DIR)/WeChatKeyBoard/VoiceLib",
 					"$(PROJECT_DIR)/ChatList/Chat/WeChatKeyBoard/Libs/VoiceLib",
 					"$(PROJECT_DIR)/Main/Libs/XMPP/Vendor/libidn",
+					"$(PROJECT_DIR)/GoogleConversionTrackingSDK-iOS-3.4.0",
 				);
-				OTHER_LDFLAGS = "-lxml2";
-				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Objc",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lxml2",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.rspread.IMReasonable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -5041,6 +5821,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = /usr/lib/libxml2.dylib;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /usr/lib/libxml2.dylib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IMReasonable/IMReasonable.pch";
 				HEADER_SEARCH_PATHS = (
@@ -5058,10 +5839,17 @@
 					"$(PROJECT_DIR)/WeChatKeyBoard/VoiceLib",
 					"$(PROJECT_DIR)/ChatList/Chat/WeChatKeyBoard/Libs/VoiceLib",
 					"$(PROJECT_DIR)/Main/Libs/XMPP/Vendor/libidn",
+					"$(PROJECT_DIR)/GoogleConversionTrackingSDK-iOS-3.4.0",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lxml2";
-				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-Objc",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Objc",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.rspread.IMReasonable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

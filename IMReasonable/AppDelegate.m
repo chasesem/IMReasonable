@@ -13,6 +13,7 @@
 #import "IMReasonableDao.h"
 #import "ThirdViewController.h"
 #import "DesHelper.h"
+#import "ACTReporter.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
@@ -84,6 +85,11 @@
         self.window.rootViewController = first;
     }
     [self.window makeKeyAndVisible];
+    [ACTAutomatedUsageTracker enableAutomatedUsageReportingWithConversionID:@"1007901453"];
+    
+    [ACTConversionReporter reportWithConversionID:@"1007901453"
+                                            label:@"r32uCN6L-WMQjbbN4AM" value:@"1.00" isRepeatable:NO];
+    return YES;
     return YES;
 }
 
