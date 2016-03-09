@@ -490,6 +490,7 @@
 
 -(void)inviteUser:(UIButton*)btn
 {
+    
     index=btn.tag-1;
     IMChatListModle *temp=[chatuserlist objectAtIndex:btn.tag-1];
     NSMutableDictionary * userdata=[[NSMutableDictionary alloc] init];
@@ -500,11 +501,11 @@
     [AnimationHelper showHUD:NSLocalizedString(@"lbfasendinginvite", nil)];
     
     NSLog(@"%@",alluser);
-    [self SendInvite:alluser];
+    [self SendInvite:alluser getButton:btn];
 
 }
 
-- (void)SendInvite:(NSMutableArray *)alluser
+- (void)SendInvite:(NSMutableArray *)alluser getButton:(UIButton*)btn
 {
  
     NSString* phone= [[[[NSUserDefaults standardUserDefaults] objectForKey:XMPPREASONABLEJID] componentsSeparatedByString:@"@"] objectAtIndex:0];
@@ -527,17 +528,18 @@
         [request setDidFinishSelector:@selector(sendInviteSuc:)];
         [request setDidFailSelector:@selector(sendInviteFaied:)];
         [request startAsynchronous];
+        [btn setTitle:NSLocalizedString(@"INVITE_FINISHED", nil) forState:UIControlStateNormal];
     }
 }
 
 - (void) sendInviteSuc:(ASIHTTPRequest *) req{
     
     [AnimationHelper removeHUD];
-    [Tool alert:NSLocalizedString(@"lbfasendsucinvite", nil)];
+    //[Tool alert:NSLocalizedString(@"lbfasendsucinvite", nil)];
     NSData *responsedata=[req responseData];
     NSDictionary * data=[Tool jsontodate:responsedata];
     NSDictionary * code=[data objectForKey:@"SendInvitationResult"];
-
+    
     NSInteger state=(NSInteger)[code valueForKey:@"count"];
     if (state>0) {
         NSArray * user=[code objectForKey:@"userarr"];

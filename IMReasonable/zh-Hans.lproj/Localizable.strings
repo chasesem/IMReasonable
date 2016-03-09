@@ -45,6 +45,7 @@
 "INVITE_ALL_PEOPLE"="一键邀请";
 "INVITE_MANY_PEOPLE"="邀请多人";
 "INVITE_FRIENDS"="邀请好友";
+"INVITE_FINISHED"="已邀请";
 "START_INVITE"="开始邀请";
 "UNKNOW"="未知";
 "CHECK_NET_WORK"="网络不可用";

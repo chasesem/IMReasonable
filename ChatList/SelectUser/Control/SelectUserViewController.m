@@ -31,11 +31,13 @@
 
 @implementation SelectUserViewController
 
+//初始化letterNameArray
 -(NSMutableArray *)letterNameArray{
     _letterNameArray=[NSMutableArray arrayWithArray:[self.localNameArray sortedArrayUsingFunction:nickNameSort context:NULL]];
     return _letterNameArray;
 }
 
+//昵称通过拼音首字母排序
 NSInteger nickNameSort(id user1, id user2, void *context){
     NSString *u1,*u2;
     //类型转换
@@ -44,7 +46,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
     return  [u1 localizedCompare:u2
              ];
 }
-
+//将chatuserList的数据提取姓名出来
 -(NSMutableArray *)localNameArray{
     if(_localNameArray==nil){
         
@@ -64,7 +66,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
     }
     return _localNameArray;
 }
-
+//将chatuserList和localNameArray 通过Dictionary连接起来
 -(NSMutableDictionary *)talKingUserDic{
     if(_talKingUserDic==nil){
         
@@ -79,7 +81,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
     }
     return _talKingUserDic;
 }
-
+//懒加载 从数据库中获取所有活跃的用户数据
 -(NSMutableArray *)chatuserlist{
     if(_chatuserlist==nil){
         
@@ -127,6 +129,8 @@ NSInteger nickNameSort(id user1, id user2, void *context){
     }
     
 }
+
+
 - (void) initNavbutton
 {
     self.navigationItem.title=NSLocalizedString(@"lbSUTitle", nil);
@@ -188,7 +192,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
             [cell setLayoutMargins:UIEdgeInsetsMake(0,0,0,0)];
         }
     }
-    
+    //NSString *localName = [self.chatuserlist objectAtIndex:[indexPath row]];
     NSString *localName=[self.letterNameArray objectAtIndex:[indexPath row]];
     IMChatListModle *temp=[self.talKingUserDic objectForKey:localName];
     if (!self.isGroup) {
@@ -213,7 +217,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    
-    
+    NSLog(@"%@~~~~~~~~~~~~~~~~~",((IMChatListModle*)_chatuserlist[indexPath.row]).localname);
     NSLog(@"确定转发");
     if (!self.isGroup) {
         
@@ -232,6 +236,7 @@ NSInteger nickNameSort(id user1, id user2, void *context){
         }else{
         
         NSString *localName=[self.letterNameArray objectAtIndex:[indexPath row]];
+            NSLog(@"%@~!!!!!!!!!",localName);
         IMChatListModle *temp=[self.talKingUserDic objectForKey:localName];
             
         ChatViewController *Cannotview=[[ChatViewController alloc] init];
@@ -269,8 +274,9 @@ NSInteger nickNameSort(id user1, id user2, void *context){
         case 0:
         {
            // [Tool alert:@"添加成功"];
-            
-            IMChatListModle * temp=[_chatuserlist objectAtIndex:actionSheet.tag];
+            IMChatListModle *temp = [self.talKingUserDic valueForKey:self.letterNameArray[actionSheet.tag]];//正确的
+            //↓这一行是把原始数据取出来 没有经过首字母排序的 所以会选择错误
+            //IMChatListModle * temp=[self.chatuserlist objectAtIndex:actionSheet.tag];
            // [[XMPPRoomDao sharedXMPPManager] InviteUser:temp.jidstr subject:self.from.localname];//邀请好友加入群里
             [[XMPPDao sharedXMPPManager] addUserToRoom:self.from.jidstr userjidstr:temp.jidstr roomname:self.from.localname];
             [IMReasonableDao addRoomUser:self.from.jidstr userjidstr:temp.jidstr role:@"0"];//把人员添加到数据库

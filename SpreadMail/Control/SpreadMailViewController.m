@@ -48,8 +48,8 @@
 
 -(NSMutableArray *)emailArray{
     if(_emailArray==nil){
-        
-        _emailArray=[IMReasonableDao getEmailArray:JID WithPagerNumber:self.pagerNumber  AndCount:EMAIL_COUNT];
+        int amount = [IMReasonableDao getEmailCount];
+        _emailArray=[IMReasonableDao getEmailArray:JID WithPagerNumber:amount - self.pagerNumber +1 AndCount:EMAIL_COUNT];
         if(_emailArray.count>0){
             
             _pagerNumber=[self getNextPagerNumber:_pagerNumber EmailCount:EMAIL_COUNT];
@@ -130,6 +130,12 @@
     [_tableview addLegendHeaderWithRefreshingBlock:^(){
         [ tmpSelf LoadData];
     }];
+//    [_tableview addLegendFooterWithRefreshingBlock:^(){
+//        // 进入刷新状态后会自动调用这个block
+//        [ tmpSelf LoadData];
+//    }];
+    
+    
     
     // 设置文字
     [_tableview.header setTitle:@"Pull down to refresh" forState:MJRefreshHeaderStateIdle];
@@ -152,7 +158,7 @@
     _tableview.backgroundColor=[UIColor colorWithHexString:TABLEVIEW_COLOR];
     //滚到最后一页
     dispatch_async(dispatch_get_main_queue(), ^{
-       [_tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.totalCount>EMAIL_COUNT?EMAIL_COUNT-1:self.totalCount-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+       //[_tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.totalCount>EMAIL_COUNT?EMAIL_COUNT-1:self.totalCount-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     });
 }
 

@@ -45,6 +45,7 @@
 "INVITE_ALL_PEOPLE"="invite all people";
 "INVITE_MANY_PEOPLE"="invite many people";
 "INVITE_FRIENDS"="invite friends";
+"INVITE_FINISHED"="Invited";
 "START_INVITE"="start invite";
 "UNKNOW"="unknow";
 "CHECK_NET_WORK"="Network is not available";

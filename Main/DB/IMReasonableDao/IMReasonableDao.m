@@ -332,6 +332,7 @@
 +(NSMutableArray *)getEmailArray:(NSString *)jid WithPagerNumber:(long)pagerNumber AndCount:(long)count{
     NSMutableArray *array=[NSMutableArray array];
     NSString *sql=[NSString stringWithFormat:@"select * from [Message] where ([to]=\"%@\" and [type]=\"email\") order by date limit %ld,%ld",jid,pagerNumber,count];
+    NSLog(@"%ld-------------------------%ld",pagerNumber , count);
 //    ([to]=\"%@\" and [type]=\"email\")
     FMResultSet *rs=[FMDBDao executeQuery:sql];
     while([rs next]){

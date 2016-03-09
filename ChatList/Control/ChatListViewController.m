@@ -311,6 +311,7 @@
     [super viewWillAppear:YES];
     [XMPPDao sharedXMPPManager].chatHelerpDelegate = self;
     [self initNavbutton];
+    [tableview reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -473,6 +474,7 @@
         UINavigationController* nvisecond = [[UINavigationController alloc] init];
         [nvisecond addChildViewController:inviteAllFriendsController];
         [self presentViewController:nvisecond animated:YES completion:nil];
+        [[self inviteButton] setTitle:@"已邀请" forState:UIControlStateNormal];
     }
 }
 

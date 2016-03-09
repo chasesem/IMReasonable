@@ -14,7 +14,7 @@
 #import "IMReasonableDao.h"
 #import "AnimationHelper.h"
 #import "ASIFormDataRequest.h"
-
+#import "XMPPDao.h"
 @interface GroupAddUserUIViewController ()
 {
 
@@ -68,7 +68,6 @@
 
 - (void) initControl
 {
-    
     self.tableview.backgroundColor=[UIColor whiteColor];
     self.tableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
@@ -187,9 +186,22 @@
 
     NSString * roomname=[NSString stringWithFormat:@"%@-%@",user,[Tool GetOnlyString]];//[Tool GetOnlyString];
     _roomname=roomname;
+    
+    
     [[XMPPRoomDao sharedXMPPManager] createRoom:roomname];
+    [self sendMessage:@"可以开始聊天了" type:@"chat" voicelenth:@"0" voicepath:@""];
 }
+- (void)sendMessage:(NSString*)body type:(NSString*)type voicelenth:(NSString*)lenth voicepath:(NSString*)path
+{
+                      NSString* msgID = [Tool GetOnlyString];
+        NSString* time = [Tool GetDate:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *myJID = [[NSUserDefaults standardUserDefaults] stringForKey:XMPPREASONABLEJID];
+        [[XMPPDao sharedXMPPManager] sendChatRoomMessage:self.from.jidstr type:type body:body voicelenth:lenth msgID:msgID];
+    
+    [IMReasonableDao saveMessage2:myJID to:self.from.jidstr body:body type:type date:time voicelenth:lenth msgID:msgID]; //纯入本地数据库
 
+    //[XMPPRoomDao sharedXMPPManager]
+}
 //NSMutableDictionary * confdict=[self parserConfigElement:configForm];
 //
 //NSMutableDictionary * newConfdict=[self getRoomConfig:confdict];

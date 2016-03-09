@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SelectDelegate.h"
 #import "IMRoomDelegate.h"
+#import "IMChatListModle.h"
 
 @interface GroupAddUserUIViewController : UIViewController<SelectUserDelegate,RoomHelerpDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (weak,nonatomic) UIImage * image;
 @property  NSString * subject;
+@property (nonatomic,strong) IMChatListModle * from;
 
 @end

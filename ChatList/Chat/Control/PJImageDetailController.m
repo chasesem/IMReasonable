@@ -104,6 +104,7 @@
     if(![self checkImageSize:self.imageSizeLabel.text]){
         [self.original removeFromSuperview];
         [self.imageSizeLabel removeFromSuperview];
+        self.isOriginal = YES;
     }
 }
 

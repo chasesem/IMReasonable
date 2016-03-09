@@ -218,8 +218,6 @@
             //  [phonenumber resignFirstResponder];
         }
     }
-    
-    
 }
 
 
