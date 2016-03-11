@@ -184,7 +184,7 @@
         }
     
 }
-
+//获取用户最后一条消息的ID
 + (NSString *)getUserLastMessageId:(NSString *)jidstr withTojidstr:(NSString*)tojidstr{
     NSString * sql=[NSString stringWithFormat:@"SELECT msgID FROM Message  where ( [from]=\"%@\" and  [to]=\"%@\") or ( [from]=\"%@\" and  [to]=\"%@\") order by  date desc limit 0,1 ",jidstr,tojidstr,tojidstr,jidstr];
     FMResultSet *rs=[FMDBDao executeQuery:sql];
@@ -282,7 +282,7 @@
     
 }
 
-
+//获取未读信息数量
 + (int)getUnreadMessageCount
 {
     
@@ -418,7 +418,7 @@
     [chatuserlist autorelease];
     return chatuserlist;
 }
-
+//获取联系人列表模型
 +(NSMutableArray*)getContactsListModle
 {
     
@@ -466,7 +466,7 @@
     return chatuserlist;
     
 }
-
+//获取所有联系人 通过在线时间倒序排列
 +(NSMutableArray*)getAllUserbyUpdateDesc
 {
     
@@ -490,7 +490,7 @@
     return chatuserlist;
 
 }
-
+//保存
 +  (void) saveUserLocalNick:(NSString *) jibstr  isImrea:(NSString *) isrea
 {
     NSString * jidstr=[jibstr stringByAppendingString:XMPPSERVER2];
@@ -1151,6 +1151,7 @@
     flag=[FMDBDao executeUpdate:sql];
     return flag;
 }
+//更新 更新时间
 +(void)updateUpdate:(NSString *)jidstr{
     BOOL flag;
     NSString * sql = [NSString stringWithFormat:@"update [User] set [Update] = datetime('now', 'localtime') where jidstr=\"%@\"",jidstr];
