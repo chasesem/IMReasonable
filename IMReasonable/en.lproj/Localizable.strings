@@ -39,7 +39,7 @@
 "BACK_CHATLIST"="back chatlist";
 "SAVE_TO_ALBUM" = "successfully saved to the album!";
 "CLEAR_PROMPT"="Voice chat records will be deleted";
-"CLEAR_DATA"="clear data";
+"CLEAR_DATA"="Clear data";
 "SEND_SMS_FAILD"="SMS verification for more than 30 minutes or more than 3 times the number of log";
 "SIGN_OUT"="Sign out";
 "INVITE_ALL_PEOPLE"="invite all people";

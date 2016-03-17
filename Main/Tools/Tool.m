@@ -696,10 +696,15 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *date =[dateFormatter dateFromString:strdate];
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    unsigned int unitFlags = NSDayCalendarUnit;
-    NSDateComponents *comps = [gregorian components:unitFlags fromDate:date  toDate:now  options:0];
-    int days =(int)[comps day];
+//    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+//    unsigned int unitFlags = NSDayCalendarUnit;
+//    NSDateComponents *comps = [gregorian components:unitFlags fromDate:date  toDate:now  options:0];
+//    int days =(int)[comps day];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"dd"];
+    int currentHourString = [[NSString stringWithFormat:@"%@",[formatter stringFromDate:now]] intValue];
+    int currentHourString1 = [[NSString stringWithFormat:@"%@",[formatter stringFromDate:date]] intValue];
+    int days = currentHourString - currentHourString1;
     return days;
 }
 

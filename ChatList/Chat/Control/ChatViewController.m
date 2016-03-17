@@ -362,8 +362,11 @@
             tempimg = cachedImage;
         }
     }
-
-    tempimg = tempimg ? tempimg : [UIImage imageNamed:defaultphoto];
+    
+    NSString *path=[Tool Append:IMReasonableAPPImagePath witnstring:self.from.faceurl];
+    SDImageCache* cache = [SDImageCache sharedImageCache];
+    UIImage* cachedImage = [cache imageFromDiskCacheForKey:path];
+    //tempimg = tempimg ? tempimg : [UIImage imageNamed:defaultphoto];
     UIImageView* userinterface = [[UIImageView alloc] initWithImage:tempimg];
     [UUImageAvatarBrowser showImage:userinterface data:nil];
 }

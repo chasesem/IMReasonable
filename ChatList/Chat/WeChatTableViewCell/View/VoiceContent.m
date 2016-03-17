@@ -147,7 +147,7 @@
 
 
 
-
+//音频信息
 - (void)setMessagemode:(MessageModel *)messagemode isNeedName:(BOOL)isName{
     
     self.from.text=messagemode.username;
