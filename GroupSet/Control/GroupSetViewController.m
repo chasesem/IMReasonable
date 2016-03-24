@@ -319,6 +319,7 @@
 -(void)switchAction:(UISwitch*)sender{
 
     NSString * vaule=sender.isOn?@"1":@"0";
+    NSLog(@"111111");
     [IMReasonableDao setUserNeedTips:self.from.jidstr vaule:vaule];
     [XMPPDao GetAllRoom];
     //[Tool alert:vaule];

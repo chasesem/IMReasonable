@@ -14,24 +14,20 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95Q-qC-Bcq">
                     <rect key="frame" x="8" y="18" width="366" height="79"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05b-Jp-0bx" userLabel="邮件内容">
-                            <rect key="frame" x="6" y="33" width="354" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="BgY-P6-j3y"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG6-Ik-P4p" userLabel="发件人">
-                            <rect key="frame" x="6" y="6" width="67" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG6-Ik-P4p" userLabel="发件人">
+                            <rect key="frame" x="6" y="6" width="352" height="54"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="67" id="UwG-oV-QlB"/>
-                                <constraint firstAttribute="height" constant="21" id="pxE-0B-fa4"/>
+                                <constraint firstAttribute="height" constant="54" id="pxE-0B-fa4"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="UwG-oV-QlB"/>
+                                </mask>
+                            </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7Z-lb-XpY" userLabel="邮箱接收时间">
                             <rect key="frame" x="217" y="58" width="143" height="21"/>
@@ -47,27 +43,12 @@
                                 <rect key="frame" x="108" y="27" width="139" height="21"/>
                             </variation>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y54-s5-ial" userLabel="主题">
-                            <rect key="frame" x="74" y="6" width="286" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="0y3-9d-z5G"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="05b-Jp-0bx" secondAttribute="trailing" constant="6" id="0XN-bH-hDC"/>
                         <constraint firstAttribute="bottom" secondItem="W7Z-lb-XpY" secondAttribute="bottom" id="853-in-avT"/>
-                        <constraint firstItem="05b-Jp-0bx" firstAttribute="leading" secondItem="95Q-qC-Bcq" secondAttribute="leading" constant="6" id="B43-kP-eCu"/>
                         <constraint firstItem="EG6-Ik-P4p" firstAttribute="top" secondItem="95Q-qC-Bcq" secondAttribute="top" constant="6" id="Dqa-yL-nHC"/>
                         <constraint firstAttribute="trailing" secondItem="W7Z-lb-XpY" secondAttribute="trailing" constant="6" id="OCd-by-roB"/>
-                        <constraint firstItem="y54-s5-ial" firstAttribute="leading" secondItem="EG6-Ik-P4p" secondAttribute="trailing" constant="1" id="OZU-OD-i3A"/>
-                        <constraint firstItem="y54-s5-ial" firstAttribute="top" secondItem="95Q-qC-Bcq" secondAttribute="top" constant="6" id="Xn9-29-8XW"/>
-                        <constraint firstAttribute="trailing" secondItem="y54-s5-ial" secondAttribute="trailing" constant="6" id="n5g-WG-2zM"/>
-                        <constraint firstItem="05b-Jp-0bx" firstAttribute="top" secondItem="EG6-Ik-P4p" secondAttribute="bottom" constant="6" id="yVI-2l-D8S"/>
                         <constraint firstItem="EG6-Ik-P4p" firstAttribute="leading" secondItem="95Q-qC-Bcq" secondAttribute="leading" constant="6" id="zF5-oY-lFa"/>
                     </constraints>
                 </view>
@@ -78,6 +59,7 @@
             </accessibility>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="95Q-qC-Bcq" secondAttribute="trailing" constant="8" id="fOv-e2-a0f"/>
+                <constraint firstAttribute="trailing" secondItem="EG6-Ik-P4p" secondAttribute="trailing" constant="16" id="g1r-2S-Aoq"/>
                 <constraint firstAttribute="bottom" secondItem="95Q-qC-Bcq" secondAttribute="bottom" id="ll3-fB-lmr"/>
                 <constraint firstItem="95Q-qC-Bcq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="mPX-1B-C7z"/>
                 <constraint firstItem="95Q-qC-Bcq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="yqv-nN-JWW"/>
@@ -85,10 +67,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="emailBg" destination="95Q-qC-Bcq" id="q9U-F3-xmM"/>
-                <outlet property="emailContent" destination="05b-Jp-0bx" id="no2-Qj-shF"/>
                 <outlet property="emailReceiveTime" destination="W7Z-lb-XpY" id="sPL-KK-JGb"/>
                 <outlet property="emailSender" destination="EG6-Ik-P4p" id="PdB-g3-BR5"/>
-                <outlet property="emailSubject" destination="y54-s5-ial" id="TTS-xf-e0b"/>
             </connections>
             <point key="canvasLocation" x="151" y="-405.5"/>
         </view>

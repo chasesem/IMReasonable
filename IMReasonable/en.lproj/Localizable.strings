@@ -333,8 +333,8 @@
 //*SpreadMailViewController//
 "lbtspreadname"="Spread Email";
 
-
-
+//邮箱设置
+"lbemailsetting"="Email Setting";
 
 
 //国家代码正常翻译显示

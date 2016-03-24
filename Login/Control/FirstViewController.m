@@ -277,6 +277,8 @@ typedef enum {
 
 - (IBAction)dodone:(id)sender
 {
+    [[NSUserDefaults standardUserDefaults] setObject:userdata.countrycode forKey:@"UserCountryCode"];
+    [[NSUserDefaults standardUserDefaults] setObject:userdata.phonenumber forKey:@"UserPhoneNumber"];
     NSString* msg =
         [NSString stringWithFormat:NSLocalizedString(@"lbactionmsg", nil),
                   userdata.countrycode, userdata.phonenumber];

@@ -15,6 +15,7 @@
 
 #import "PJNetWorkHelper.h"
 #import "PJBaseHttpTool.h"
+#import "EmailSettingViewController.h"
 #import "EmailDetailViewController.h"
 #import "SpreadMailModel.h"
 #import "SpreadEmailPreviewCell.h"
@@ -113,6 +114,8 @@
 - (void)initNavTitle{
 
     self.navigationItem.title=NSLocalizedString(@"lbtspreadname",nil);
+    UIBarButtonItem* right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemEdit target:self action:@selector(goToSettingViweController:)];
+    self.navigationItem.rightBarButtonItem = right;
 }
 
 //初始化页面控件
@@ -289,6 +292,16 @@
 
 -(void)userStatusChange:(XMPPPresence *)presence{
     
+}
+
+
+-(void)goToSettingViweController:(id) sender{
+//    ThridViewController *thridView = [[ThridViewController alloc] init];
+//    [self.navigationController pushViewController:thridView animated:YES];
+//    thridView.title = @"Thrid View";
+    EmailSettingViewController *settingview = [[EmailSettingViewController alloc] init];
+    [self.navigationController pushViewController:settingview animated:YES];
+    settingview.title = NSLocalizedString(@"lbemailsetting", nil);
 }
 
 @end

@@ -20,6 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbEmail;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UILabel *emailPrompt;
-
+@property (weak, nonatomic) IBOutlet UILabel *phoneNum;
 @property  BOOL isSetting;
 @end

@@ -29,6 +29,8 @@
 		182AB29A1A36A7D800A96AA0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182AB2991A36A7D800A96AA0 /* AudioToolbox.framework */; };
 		182AB29E1A36E04100A96AA0 /* msg.caf in Resources */ = {isa = PBXBuildFile; fileRef = 182AB29D1A36E04100A96AA0 /* msg.caf */; };
 		18414ED11A2483D600994AEA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18414ED01A2483D600994AEA /* libsqlite3.dylib */; };
+		184DF9F11C9BADA500026700 /* EmailSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184DF9F01C9BADA500026700 /* EmailSettingViewController.m */; };
+		184DF9F41C9BFEF900026700 /* SettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184DF9F31C9BFEF900026700 /* SettingHeaderView.m */; };
 		18B908A61A81FFB000E6B02D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B908A51A81FFAF00E6B02D /* MessageUI.framework */; };
 		18BA7E611C844FCB009C1A66 /* GoogleConversionPing. in Resources */ = {isa = PBXBuildFile; fileRef = 18BA7E5B1C844FCB009C1A66 /* GoogleConversionPing. */; };
 		18BA7E621C844FCB009C1A66 /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BA7E5F1C844FCB009C1A66 /* libGoogleConversionTracking.a */; };
@@ -637,6 +639,10 @@
 		182AB2991A36A7D800A96AA0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		182AB29D1A36E04100A96AA0 /* msg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msg.caf; sourceTree = "<group>"; };
 		18414ED01A2483D600994AEA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		184DF9EF1C9BADA500026700 /* EmailSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailSettingViewController.h; path = SpreadMail/Control/EmailSettingViewController.h; sourceTree = SOURCE_ROOT; };
+		184DF9F01C9BADA500026700 /* EmailSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailSettingViewController.m; path = SpreadMail/Control/EmailSettingViewController.m; sourceTree = SOURCE_ROOT; };
+		184DF9F21C9BFEF900026700 /* SettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHeaderView.h; sourceTree = SOURCE_ROOT; };
+		184DF9F31C9BFEF900026700 /* SettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHeaderView.m; sourceTree = SOURCE_ROOT; };
 		18B908A51A81FFAF00E6B02D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		18BA7DC91C844FCB009C1A66 /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
 		18BA7DCB1C844FCB009C1A66 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
@@ -4454,6 +4460,8 @@
 				CAB0DAD61BB2B6F300518F0F /* SpreadMailViewController.m */,
 				CA9C98261BFDC9680050323F /* EmailDetailViewController.h */,
 				CA9C98271BFDC9680050323F /* EmailDetailViewController.m */,
+				184DF9EF1C9BADA500026700 /* EmailSettingViewController.h */,
+				184DF9F01C9BADA500026700 /* EmailSettingViewController.m */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -4825,6 +4833,8 @@
 				CAB0DADB1BB2B70D00518F0F /* MailTableViewCell.m */,
 				CA9C98231BFD76C20050323F /* SpreadEmailPreviewCell.h */,
 				CA9C98241BFD76C20050323F /* SpreadEmailPreviewCell.m */,
+				184DF9F21C9BFEF900026700 /* SettingHeaderView.h */,
+				184DF9F31C9BFEF900026700 /* SettingHeaderView.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -5455,6 +5465,7 @@
 				CA64A5AD1BCD0F8600DA4ED7 /* PJBaseHttpTool.m in Sources */,
 				CAB992E71BB393BF00661AB7 /* FunctionTableViewCell.m in Sources */,
 				CA9C98181BFC733D0050323F /* MJDictionaryCache.m in Sources */,
+				184DF9F41C9BFEF900026700 /* SettingHeaderView.m in Sources */,
 				CAAA3FE71C0ED66B003D4A12 /* PJTextView.m in Sources */,
 				CAB994641BB39B6500661AB7 /* XMPPXFacebookPlatformAuthentication.m in Sources */,
 				CAB9958B1BB39FC300661AB7 /* XMPPMessage+XEP_0085.m in Sources */,
@@ -5570,6 +5581,7 @@
 				CAB9957F1BB39F6D00661AB7 /* XMPPMessage+XEP_0066.m in Sources */,
 				CA9C98191BFC733D0050323F /* MJExtensionConst.m in Sources */,
 				CAB9943D1BB39A4800661AB7 /* FMDBDao.m in Sources */,
+				184DF9F11C9BADA500026700 /* EmailSettingViewController.m in Sources */,
 				CAB995F51BB3A1C700661AB7 /* NSXMLElement+XEP_0335.m in Sources */,
 				CAB9954E1BB39EE900661AB7 /* XMPPvCard.xcdatamodeld in Sources */,
 				CAB995D71BB3A13F00661AB7 /* XMPPTime.m in Sources */,

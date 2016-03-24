@@ -19,11 +19,13 @@
     NSString *emailJson=message.body;
     SpreadMailModel *model=[SpreadMailModel mj_objectWithKeyValues:[emailJson stringByReplacingOccurrencesOfString:@"'" withString:@"\""]];
     self.emailModel=model;
-    self.emailSender.text=[NSString stringWithFormat:@"%@:",model.campaign_from];
-    self.emailSubject.text=model.campaign_subject;
+    NSString *sender =[NSString stringWithFormat:@"%@:",model.campaign_from];
+    //self.emailSender.text=[NSString stringWithFormat:@"%@:",model.campaign_from];
+    //self.emailSubject.text=model.campaign_subject;
     NSString *temptime=message.date;
     NSString *displaytime=[Tool getDisplayTime:message.date];
     NSString *time=NSLocalizedString(displaytime, displaytime);
+    NSString *allData =[NSString stringWithFormat:@"%@  %@ \n %@",sender , model.campaign_subject,model.CampaignContent];
     //添加小时和分钟
         NSDate *  date=[NSDate date];
         NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
@@ -38,10 +40,15 @@
     self.emailReceiveTime.text=time;
     self.emailReceiveTime.font=[UIFont systemFontOfSize:11];
     self.emailReceiveTime.textColor=[UIColor grayColor];
-    self.emailContent.text=model.CampaignContent;
+    //self.emailContent.text=model.CampaignContent;
+    //self.emailSender.text= allData;
+    self.emailSender.numberOfLines = 0;
+    [self.emailSender setText:allData];
     self.emailModel=model;
     self.emailBg.layer.masksToBounds=YES;
     self.emailBg.layer.cornerRadius=6;
+    //self.emailSender.lineBreakMode = UILineBreakModeWordWrap;
+    
     
 }
 

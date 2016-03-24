@@ -55,7 +55,9 @@
     NSString* localemail = [defaults objectForKey:MyEmail];
     self.txtName.text = locaname;
     self.email.text = localemail;
-
+    NSString *userPhoneNumber = [NSString stringWithFormat:@"%@ : +%@ %@",NSLocalizedString(@"lbPhone", nil),[[NSUserDefaults standardUserDefaults] stringForKey:@"UserCountryCode"],[[NSUserDefaults standardUserDefaults] stringForKey:@"UserPhoneNumber"]];
+    
+    self.phoneNum.text = userPhoneNumber;
     //为调试用 设置这个名字会弹出设备的Token
     if ([locaname isEqualToString:@"__PJ"]) {
         NSString* token = [defaults stringForKey:@"DeviceToken"];

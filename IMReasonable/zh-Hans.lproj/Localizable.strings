@@ -326,7 +326,7 @@
 
 //*SpreadMailViewController//
 "lbtspreadname"="Spread 邮件";
-
+"lbemailsetting"="邮箱设置";
 
 //国家代码
 "lbc_Angola"="安哥拉";
