@@ -2,7 +2,7 @@
 //  EmailSettingViewController.m
 //  IMReasonable
 //
-//  Created by apple on 16/3/18.
+//  Created by ChingYam on 16/3/18.
 //  Copyright © 2016年 Reasonable. All rights reserved.
 //
 
